@@ -80,4 +80,28 @@ Look at [**Anicoto README**](https://pub.dev/packages/sa_anicoto) for further de
 
 A similar mechanism to `Rendering` widget isn't available in Simple Animation version `2.x.x`. The use cases for that widget are rare. Also the `Rendering` widget alone doesn't help developers enough.
 
-I recommend using a `LoopAnimation` widget to create an endless animation and to track the "passed time" yourself.
+You can replace the `Rendering` widget by using a `LoopAnimaton` with a `ConstantTween(1)` and ignore the animated value.
+
+```dart
+LoopAnimation<int>(
+  tween: ConstantTween(1), // <-- any tween will satisfy the API here
+  builder: (context, child, value) { // <-- ignore 'value'
+    // endless rendering loop
+    return ...
+  },
+)
+```
+
+The `Rendering` widget supplied you with the passed time. You can get that behavior by using the following snippet (uses [supercharged](https://pub.dev/packages/supercharged) syntactic sugar):
+
+```dart
+var startTime = DateTime.now().duration(); // Duration() passed since 01.01.1970
+```
+
+Instead of using `AnimationProgress` class to track the progression of your particle animation you can just save a `startTime` and a `duration` for your particle. You can get the current progress with:
+
+```dart
+double progress() {
+  return ((DateTime.now().duration() - startTime) / duration).clamp(0.0, 1.0);
+}
+```

@@ -1,3 +1,3 @@
-## [0.0.3] - TODO: Add release date.
+## [0.0.4] 
 
-* TODO: Describe initial release.
+- Experimenting with API
