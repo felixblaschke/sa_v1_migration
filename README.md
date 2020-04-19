@@ -101,7 +101,7 @@ var startTime = DateTime.now().duration(); // Duration() passed since 01.01.1970
 Instead of using `AnimationProgress` class to track the progression of your particle animation you can just save a `startTime` and a `duration` for your particle. You can get the current progress with:
 
 ```dart
-double progress() {
+num progress() {
   return ((DateTime.now().duration() - startTime) / duration).clamp(0.0, 1.0);
 }
 ```

@@ -1,6 +1,6 @@
 name: sa_v1_migration
 description: Use simple_animation v1 code while migratating to v2
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/felixblaschke/sa_v1_migration
 
 environment:
