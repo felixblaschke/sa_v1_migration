@@ -1,3 +1,3 @@
-## [0.0.6] 
+## 1.0.0
 
-- Experimenting with API
+- **New:** Added state of simple_animations `1.3.12`
