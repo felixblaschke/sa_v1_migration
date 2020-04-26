@@ -20,7 +20,7 @@ This package (`sa_v1_migration`) contains the lastest stable release of Simple A
 
 All classes from version `1.x.x` has been marked as deprecated.
 
-### Replacing depricated classes
+### Replacing deprecated classes
 
 Now you can focus on replacing your existing code with the new mechanisms.
 
