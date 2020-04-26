@@ -33,6 +33,7 @@ import '../animation_task/animation_task.dart';
 /// It's possible to track the task processing by attaching an [onStatusChange]
 /// listener. But keep in mind that [AnimationTask] also has listener to track
 /// start and complete status.
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class AnimationControllerX extends Animation<double>
     with
         AnimationEagerListenerMixin,

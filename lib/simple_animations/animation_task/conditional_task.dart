@@ -4,6 +4,7 @@ import 'animation_task.dart';
 
 /// Animation task that keeps emitting the current value of animation until a
 /// certain condition occurs (when [predicate] return `true`).
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class ConditionalTask extends AnimationTask {
   /// Predicate function that checks for a certain condition.
   /// If it returns `false` the task keep processing.

@@ -28,6 +28,7 @@ import 'package:flutter/widgets.dart';
 ///     }
 ///   );
 /// ```
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class MultiTrackTween extends Animatable<Map<String, dynamic>> {
   final _tracksToTween = Map<String, _TweenData>();
   var _maxDuration = 0;
@@ -114,6 +115,7 @@ class MultiTrackTween extends Animatable<Map<String, dynamic>> {
 }
 
 /// Single property to tween. Used by [MultiTrackTween].
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class Track<T> {
   final String name;
   final List<_TrackItem> items = [];

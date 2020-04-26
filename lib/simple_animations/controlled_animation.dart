@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 /// Playback tell the controller of the animation what to do.
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 enum Playback {
   /// Animation stands still.
   PAUSE,
@@ -63,6 +64,7 @@ enum Playback {
 ///   with a value between *0.0* and *1.0*. The [startPosition] is only
 ///   evaluated once during the initialization of the widget.
 ///
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class ControlledAnimation<T> extends StatefulWidget {
   final Playback playback;
   final Animatable<T> tween;

@@ -4,6 +4,7 @@ import 'animation_task.dart';
 
 /// An animation task that sets the current animation position to a specified
 /// [value]. It completes right after that.
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class SetValueTask extends AnimationTask {
   /// Double value between `0.0` and `1.0` to set.
   final double value;

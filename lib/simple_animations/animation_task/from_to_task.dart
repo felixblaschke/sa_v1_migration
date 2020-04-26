@@ -14,6 +14,7 @@ import 'animation_task.dart';
 /// to `false`.
 ///
 /// You can apply an easing curve by setting [curve].
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class FromToTask extends AnimationTask {
   /// Animation duration from 0.0 to 1.0 (if [durationBasedOnZeroToOneInterval] is `true`).
   /// Else the duration of this animation task (if [durationBasedOnZeroToOneInterval] is `false`).

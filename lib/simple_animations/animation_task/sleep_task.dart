@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'animation_task.dart';
 
 /// Animation task that sleep for a specified [duration]. After that is completes.
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class SleepTask extends AnimationTask {
   /// Duration to sleep
   Duration duration;

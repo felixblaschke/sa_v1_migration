@@ -18,6 +18,7 @@ import 'from_to_task.dart';
 ///
 /// You can assign an alternative animation curve by setting [curve] which defaults
 /// to [Curves.linear].
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class LoopTask extends AnimationTask {
   /// Double value between `0.0` and `1.0` that indicates the start position of
   /// the a loop iteration.

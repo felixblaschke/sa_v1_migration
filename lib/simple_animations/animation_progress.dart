@@ -6,6 +6,7 @@ import 'dart:math';
 ///
 /// You can query the progress value - a value between `0.0` and `11.0` - by
 /// calling [progress] and passing the current time.
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class AnimationProgress {
   final Duration duration;
   final Duration startTime;

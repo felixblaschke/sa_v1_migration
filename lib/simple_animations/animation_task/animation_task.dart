@@ -3,6 +3,7 @@ import 'package:sa_v1_migration/sa_v1_migration.dart';
 
 /// Abstract class that represents a single animation task that can be processed
 /// inside an [AnimationControllerX].
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 abstract class AnimationTask {
   /// Time when task started
   Duration startedTime;
@@ -48,4 +49,5 @@ abstract class AnimationTask {
   }
 }
 
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 typedef AnimationTaskCallback = Function();

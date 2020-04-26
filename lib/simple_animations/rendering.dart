@@ -16,6 +16,7 @@ import 'package:flutter/widgets.dart';
 /// The widget will interpolate the animation by calling the [onTick] function
 /// multiple times. (Default value is `20`. You can tune it by setting the
 /// [startTimeSimulationTicks] property.)
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 class Rendering extends StatefulWidget {
   final Widget Function(BuildContext context, Duration timeElapsed) builder;
   final Function(Duration timeElapsed) onTick;

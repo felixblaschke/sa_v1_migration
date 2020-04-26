@@ -24,6 +24,7 @@ import 'animation_controller_x.dart';
 ///  }
 /// ```
 @optionalTypeArgs
+@Deprecated('See migration guide: https://pub.dev/packages/sa_v1_migration')
 mixin AnimationControllerMixin<T extends StatefulWidget> on State<T>
     implements TickerProvider {
   Ticker _ticker;
