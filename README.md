@@ -10,7 +10,7 @@ This guide will lead you through the upgrading process of Simple Animation.
 
 Change your pubspec.yaml:
 
-- Set the Simple Animations dependency `simple_animations: ^2.1.0` and execute a **pub upgrade**.
+- Set the latest Simple Animations dependency `simple_animations: ^2.x.x` ([find latest](https://pub.dev/packages/simple_animations#-installing-tab-)) and execute a **pub upgrade**.
 
 - Simple Animations will expose the content of this package.
 
