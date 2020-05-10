@@ -1,3 +1,7 @@
+## 1.1.1
+
+- **Fix:** typo
+
 ## 1.1.0
 
 - **Change:** Marked all classes as deprecated.
